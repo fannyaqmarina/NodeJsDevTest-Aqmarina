@@ -1,14 +1,30 @@
 let anagram = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua'];
 let arrResult = [];
-const resAnagram = anagram.reduce((val, str) => {
-        const sortedStr = splitStr(str);
-        if(!val[sortedStr]) {
-            val[sortedStr] = [];
+let unique;
+console.log(getAnagram(anagram))
+
+function getAnagram(word) {
+    let sorted = [];
+    word.forEach(element => {
+        let sortedStr = splitStr(element)
+        sorted.push(sortedStr)
+        unique = Array.from(new Set(sorted))
+    });
+    for (let val = 0; val < unique.length; val++) {
+        let arr=[];
+        for (let i = 0; i < word.length; i++) {
+        let sortedStr = splitStr(word[i])
+        if(unique[val] == sortedStr){
+            arr.push(word[i])
         }
-        val[sortedStr].push(str);
-        return val;
-    }, {});
-console.log(Object.keys(resAnagram).map(key => resAnagram[key]))
+        }
+        arrResult.push(arr)  
+        
+    }
+    return arrResult
+        
+    }
+   
 function splitStr(str) {
     return str.split("").sort().join("")
 }
