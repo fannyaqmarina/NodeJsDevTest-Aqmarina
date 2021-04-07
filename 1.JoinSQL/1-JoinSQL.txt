@@ -1,0 +1,3 @@
+Jawaban : 
+
+1. SELECT a.id, a.username, b.username AS ParentUserName FROM user a LEFT JOIN user b ON a.parent = b.id
