@@ -15,7 +15,6 @@ service.getSearch = async (query) => {
                     return result.data.Search;
                 }
               }).catch((err) => {
-                  console.log(err)
                 return err.response;
               });
             return data;
@@ -44,5 +43,4 @@ service.getDetail = async (id) => {
         return [];
     }
 }
-
 module.exports=service

@@ -31,8 +31,4 @@ controller.getDetail = async function (req, res) {
         res.status(status.statusCode.error).json(status.errorMessage(error));
     }
 }
-
-
-
-
 module.exports=controller;
