@@ -1,6 +1,8 @@
 const service = {};
 const axios = require('axios').default;
 const log = require('./logService');
+require('dotenv').config();
+
 
 service.getSearch = async (query) => {
     let params = '?apikey='+process.env.API_KEY+'&s='+query;
