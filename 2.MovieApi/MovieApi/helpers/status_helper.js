@@ -3,47 +3,24 @@
 
 const status = {};
 
-status.successMessage = ress => (
-    {
-        status: 'success',
-        count: ress.length,
-        data: ress
-    }
-);
-status.saveMessage = ress => (
-    {
-        code: '01',
-        status: true,
-        message: 'Berhasil Menyimpan Data',
-        data: ress
-    }
-);
-
-status.updateMessage = ress => (
-    {
-        code: '01',
-        status: true,
-        message: 'Berhasil Memperbarui Data',
-        data: ress
-    }
+status.successMessage = (M, ress) => (
+  {
+    code: '01',
+    status: true,
+    message: M,
+    data: ress
+  }
 );
 
 status.emptyMessage = ress => (
     {
-        status: 'empty',
-        count: '0',
-        data: ress
-    }
-);
-
-status.failUpload = ress => (
-    {
         code: '02',
         status: true,
-        message: 'Data yang di Input Tidak Sesuai',
+        message: 'Data Tidak Ditemukan',
         data: ress
-    }
+      }
 );
+
 
 status.errorMessage = ress => (
     {
