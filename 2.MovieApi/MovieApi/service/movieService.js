@@ -6,8 +6,8 @@ const log = require('./logService');
 
 
 service.getSearch = async (query) => {
-    let params = '?apikey='+process.env.API_KEY+'&s='+query;
-    let endpoint = process.env.API_MOVIE
+    let params = '?apikey=faf7e5bb&s&s='+query;
+    let endpoint = 'http://www.omdbapi.com/'
     try {
         let data = await axios({
             method: 'get',
@@ -27,8 +27,8 @@ service.getSearch = async (query) => {
 }
 
 service.getDetail = async (id) => {
-    let params = '?apikey='+process.env.API_KEY+'&i='+id;
-    let endpoint = process.env.API_MOVIE
+    let params = '?apikey=faf7e5bb&s&i='+id;
+    let endpoint = 'http://www.omdbapi.com/'
     try {
         let data = await axios({
             method: 'get',
