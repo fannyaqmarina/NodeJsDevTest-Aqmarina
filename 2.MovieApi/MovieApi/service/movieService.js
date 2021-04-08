@@ -20,7 +20,7 @@ service.getSearch = async (query) => {
               });
             return data;
     } catch (error) {
-        console.log(error);
+        return [];
     }
 }
 
@@ -41,7 +41,7 @@ service.getDetail = async (id) => {
               });
             return data;
     } catch (error) {
-        console.log(error);
+        return [];
     }
 }
 

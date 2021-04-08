@@ -21,7 +21,6 @@ controller.getDetail = async function (req, res) {
     let movieId = req.query.movieId;
     try {
         let detailMovie = await service.movieService.getDetail(movieId);
-        console.log(detailMovie)
         if (detailMovie) {
             let rs = status.successMessage("Data berhasil ditampilkan", detailMovie);
             res.status(status.statusCode.success).json(rs);

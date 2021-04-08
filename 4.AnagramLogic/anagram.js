@@ -13,7 +13,7 @@ function getAnagram(word) {
     for (let val = 0; val < unique.length; val++) {
         let arr=[];
         for (let i = 0; i < word.length; i++) {
-        let sortedStr = splitStr(word[i])
+        let sortedStr = word[i].split("").sort().join("")
         if(unique[val] == sortedStr){
             arr.push(word[i])
         }
@@ -24,7 +24,3 @@ function getAnagram(word) {
     return arrResult
         
     }
-   
-function splitStr(str) {
-    return str.split("").sort().join("")
-}
