@@ -8,8 +8,9 @@ hit API for :
 <p>a. search movie by title </p>
   <br>
 example :
+<br>
 <a>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy</a>
-
+<br>
 <p>b. get Detail movie by movie Id </p>
 <br>
 example:
