@@ -1,20 +1,17 @@
-# Nodejs Test
-<h5>Answer test for Node Js Developer</h5>
+# Answer test for Node Js Developer
 
 <b>for public access : </b>
 <br>
 hit API for : 
 <br>
-<p>a. search movie by title </p>
-  <br>
+<p>a. search movie by title </p><br>
 example :
 <br>
 <b>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy</b>
 <br>
 <p>b. get Detail movie by movie Id </p>
 <br>
-example:
-<br>
+example:<br>
 <b>https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644</b>
 
 <h1>--Getting Started--</h1>
