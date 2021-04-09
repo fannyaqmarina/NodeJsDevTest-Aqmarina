@@ -32,7 +32,7 @@ controller.getDetail = async function (req, res) {
     }
 }
 
-controller.getDetail = async function (req, res) {
+controller.getDetailParams = async function (req, res) {
   let movieId = req.params.movieId;
   try {
       let detailMovie = await service.movieService.getDetail(movieId);
