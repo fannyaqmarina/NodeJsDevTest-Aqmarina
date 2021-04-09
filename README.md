@@ -1,15 +1,35 @@
-# NodeJsDevTest-Aqmarina
-Answer test for Node Js Developer
+# Heading
+<h5>Answer test for Node Js Developer<h5>
 
 for public access : 
 hit API for : 
-a. search movie by title 
+<p>a. search movie by title <p>
 example :
-https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy
+<a>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy<a>
 
-b. get Detail movie by movie Id 
+<p>b. get Detail movie by movie Id <p>
 example:
-https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644
+<a>https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644<a>
 
---Thankyou--
+<h1>--Getting Started--<h1>
+
+<h4>Version<h4>
+node = v14.16.0
+npm = 6.14.11
+
+make you had config you database and seeting in env, 
+to run the program 
+
+first run 
+npm install 
+to install all depedencies
+
+then 
+npm start 
+to run the system 
+
+for unit test please run 
+npm test 
+
+<h3>--Thankyou--<h3>
 
