@@ -4,14 +4,13 @@
 <br>
 hit API for : 
 <br>
-<p>a. search movie by title </p><br>
+<p>a. search movie by title </p>
 example :
-<br>
 <b>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy</b>
 <br>
-<p>b. get Detail movie by movie Id </p>
 <br>
-example:<br>
+<p>b. get Detail movie by movie Id </p>
+example:
 <b>https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644</b>
 
 <h1>--Getting Started--</h1>
