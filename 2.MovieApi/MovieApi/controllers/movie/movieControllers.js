@@ -32,6 +32,21 @@ controller.getDetail = async function (req, res) {
     }
 }
 
+controller.getDetail = async function (req, res) {
+  let movieId = req.params.movieId;
+  try {
+      let detailMovie = await service.movieService.getDetail(movieId);
+      if (detailMovie) {
+          let rs = status.successMessage("Data berhasil ditampilkan", detailMovie);
+          res.status(status.statusCode.success).json(rs);
+        } else {
+          res.status(status.statusCode.success).json(status.emptyMessage([]));
+        }
+  } catch (error) {
+      res.status(status.statusCode.error).json(status.errorMessage(error));
+  }
+}
+
 
 
 
