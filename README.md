@@ -1,19 +1,23 @@
-# Heading
-<h5>Answer test for Node Js Developer<h5>
+# Nodejs Test
+<h5>Answer test for Node Js Developer</h5>
 
-for public access : 
+<b>for public access : </b>
 hit API for : 
-<p>a. search movie by title <p>
+<br>
+<p>a. search movie by title </p>
+  <br>
 example :
-<a>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy<a>
+<a>https://aqmarina-movieapi.herokuapp.com/api/searchMovie?keyword=happy</a>
 
-<p>b. get Detail movie by movie Id <p>
+<p>b. get Detail movie by movie Id </p>
+<br>
 example:
-<a>https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644<a>
+<br>
+<a>https://aqmarina-movieapi.herokuapp.com/api/detailMovie?movieId=tt1911644</a>
 
-<h1>--Getting Started--<h1>
+<h1>--Getting Started--</h1>
 
-<h4>Version<h4>
+<h4>Version</h4>
 node = v14.16.0
 npm = 6.14.11
 
@@ -31,5 +35,5 @@ to run the system
 for unit test please run 
 npm test 
 
-<h3>--Thankyou--<h3>
+<h3>--Thankyou--</h3>
 
