@@ -24,3 +24,6 @@ function getAnagram(word) {
     return arrResult
         
     }
+    function splitStr(str) {
+        return str.split("").sort().join("")
+    }
